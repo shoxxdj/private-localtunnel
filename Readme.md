@@ -92,13 +92,21 @@ docker run -d    --restart always     --net host     -v $HOME/ssl:/etc/nginx/ssl
 
 On the client side install this project : 
 
-```https://github.com/shoxxdj/localtunnel-private```
+```
+https://github.com/shoxxdj/localtunnel-private
+```
 
 By simply doing : 
 
-```sudo npm i localtunnel-private -g```
+```
+sudo npm i localtunnel-private -g
+```
 
-Then, copy the content of this file : `https://github.com/shoxxdj/localtunnel-private/blob/master/config/default.json` to ~/.config/localtunnel/config
+Then, copy the content of this file : 
+```
+https://github.com/shoxxdj/localtunnel-private/blob/master/config/default.json
+``` 
+To ~/.config/localtunnel/config
 
 And complete with the previously obtained data from the server for the TOPT variable, also change the host to tunnel.topdomain.tld
 
@@ -121,7 +129,7 @@ You may now have something like this :
 
 Finaly you can just launch the following : 
 
-` lt --port 1234 `
+``` lt --port 1234 ```
 
 Your localport 1234 is now exposed on the internet well done ! 
 
