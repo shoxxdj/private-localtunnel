@@ -61,8 +61,11 @@ docker run -d     --restart always     --name localtunnel     --net host    serv
 you can docker inspect this new container and copy the JSON informations printed. Save them for later.
 
 You can now setup your DNS. 
+
 You need for example : 
+
 A tunnel.topdomain.tld => points to IP 
+
 CNAME *.tunnel.topdomain.tld => points to tunnel.topdomain.tld 
 
 If you use Cloudflare do not use their proxy here.
